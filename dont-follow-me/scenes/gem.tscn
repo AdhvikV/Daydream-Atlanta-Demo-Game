@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cictcb435xyrb"]
+
+[ext_resource type="Script" uid="uid://sh0hoytbaei4" path="res://scenes/gem.gd" id="1_mpwtx"]
+[ext_resource type="Texture2D" uid="uid://qm6wrrg7n2up" path="res://gem-removebg-preview.png" id="2_bhq7q"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rj4j3"]
+radius = 45.891174
+
+[node name="Gem" type="Node2D"]
+position = Vector2(869, 364)
+script = ExtResource("1_mpwtx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-221.75, 1)
+scale = Vector2(0.16838849, 0.15891472)
+texture = ExtResource("2_bhq7q")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-223, 0)
+shape = SubResource("CircleShape2D_rj4j3")

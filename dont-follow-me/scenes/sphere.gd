@@ -2,11 +2,12 @@ extends Node2D
 
 # Messages in order
 @export var messages := [
-	"Why did you come? Why did you play?", # Intro
-	"Don't follow me!",                    # Intro continues
-	"Don't jump on this platform!",       # Obstacle 1
-	"Don't finish this!",                 # Obstacle 2
-	"Don't cross this next gap!"          # Obstacle 3
+	"Space to See All Messages",
+	"Lava Is Rising?", # Intro
+	"Sacrifice Your Gems To Go Faster",                    # Intro continues
+	"Click E to Sacrifice",       # Obstacle 1
+	"Invisible Obstacles",                 # Obstacle 2
+	"Do It As Fast As You Can"          # Obstacle 3
 ]
 
 var current_msg := 0

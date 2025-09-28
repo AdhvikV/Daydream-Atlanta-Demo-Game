@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dlajetnicnim5"]
+[gd_scene load_steps=8 format=3 uid="uid://dlajetnicnim5"]
 
 [ext_resource type="Texture2D" uid="uid://d0r38p61bpxsu" path="res://life_orb.png" id="1_rarhs"]
 [ext_resource type="Script" uid="uid://cdjawr7jj6h71" path="res://scenes/sphere.gd" id="2_vcsgt"]
 [ext_resource type="Texture2D" uid="uid://bn5x1fm0ps6yq" path="res://sphere core.png" id="3_c01mt"]
 [ext_resource type="Script" uid="uid://kn5obqlmykra" path="res://scenes/player.gd" id="3_rarhs"]
 [ext_resource type="Texture2D" uid="uid://b40ksd6opajs4" path="res://knight png.png" id="5_c01mt"]
+[ext_resource type="FontFile" uid="uid://bkjir7ir566ot" path="res://Pixelmax-Regular.otf" id="6_c01mt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nxtc6"]
 size = Vector2(26.601563, 40)
@@ -61,5 +62,6 @@ offset_left = 470.4934
 offset_top = 89.99724
 offset_right = 715.4934
 offset_bottom = 112.99724
+theme_override_fonts/font = ExtResource("6_c01mt")
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true

@@ -1,3 +1,32 @@
-[gd_scene format=3 uid="uid://lr778cwk00r"]
+[gd_scene load_steps=2 format=3 uid="uid://lr778cwk00r"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" uid="uid://d2go2pmkhiu4q" path="res://scenes/tower_2.gd" id="1_0qe5w"]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0qe5w")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1255.0
+offset_bottom = 853.0
+color = Color(0.11621902, 0.041421577, 0.01301016, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 391.0
+offset_right = 871.0
+offset_bottom = 519.0
+theme_override_font_sizes/font_size = 48
+text = "Retry?"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 330.0
+offset_right = 1093.0
+offset_bottom = 411.0
+theme_override_font_sizes/font_size = 29
+text = "                                        More Levels Coming Soon!!!"
