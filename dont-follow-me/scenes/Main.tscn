@@ -36,7 +36,7 @@ texture = ExtResource("1_rarhs")
 
 [node name="ContinueDialog" type="ConfirmationDialog" parent="CanvasLayer"]
 
-[node name="player" type="CharacterBody2D" parent="."]
+[node name="player" type="CharacterBody2D" parent="." groups=["player"]]
 script = ExtResource("3_rarhs")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
@@ -52,8 +52,8 @@ shape = SubResource("RectangleShape2D_nxtc6")
 script = ExtResource("2_vcsgt")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sphere"]
-position = Vector2(449.05005, 139.05)
-scale = Vector2(0.15, 0.15)
+position = Vector2(435, 123)
+scale = Vector2(0.10290823, 0.10067115)
 texture = ExtResource("3_c01mt")
 
 [node name="Label" type="Label" parent="Sphere"]
