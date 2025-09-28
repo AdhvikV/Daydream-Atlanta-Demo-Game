@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dhnfje3motjcj"]
+
+[ext_resource type="Script" uid="uid://kn5obqlmykra" path="res://scenes/player.gd" id="1_r2usd"]
+[ext_resource type="Texture2D" uid="uid://h0iwf1cks0pe" path="res://icon.svg" id="2_ispqn"]
+[ext_resource type="Script" uid="uid://cdjawr7jj6h71" path="res://scenes/sphere.gd" id="3_etd6b"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lr155"]
+radius = 55.0
+height = 242.0
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cmj1i"]
+
+[node name="House" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+
+[node name="player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_r2usd")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+position = Vector2(107.5, 524.5)
+scale = Vector2(0.8671875, 1.8984375)
+texture = ExtResource("2_ispqn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(107.5, 524.5)
+shape = SubResource("CapsuleShape2D_lr155")
+
+[node name="Sphere" type="Node2D" parent="."]
+script = ExtResource("3_etd6b")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sphere"]
+position = Vector2(62.25, 43.75)
+scale = Vector2(125.5, 88.5)
+texture = SubResource("PlaceholderTexture2D_cmj1i")
+
+[node name="Label" type="Label" parent="Sphere"]
+offset_right = 40.0
+offset_bottom = 23.0

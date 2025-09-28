@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://dlajetnicnim5"]
+
+[ext_resource type="Texture2D" uid="uid://d0r38p61bpxsu" path="res://life_orb.png" id="1_rarhs"]
+[ext_resource type="Script" uid="uid://cdjawr7jj6h71" path="res://scenes/sphere.gd" id="2_vcsgt"]
+[ext_resource type="Texture2D" uid="uid://bn5x1fm0ps6yq" path="res://sphere core.png" id="3_c01mt"]
+[ext_resource type="Script" uid="uid://kn5obqlmykra" path="res://scenes/player.gd" id="3_rarhs"]
+[ext_resource type="Texture2D" uid="uid://b40ksd6opajs4" path="res://knight png.png" id="5_c01mt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nxtc6"]
+size = Vector2(26.601563, 40)
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DialogLabel" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LifeOrbHBox" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/LifeOrbHBox"]
+layout_mode = 2
+texture = ExtResource("1_rarhs")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/LifeOrbHBox"]
+layout_mode = 2
+texture = ExtResource("1_rarhs")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/LifeOrbHBox"]
+layout_mode = 2
+texture = ExtResource("1_rarhs")
+
+[node name="ContinueDialog" type="ConfirmationDialog" parent="CanvasLayer"]
+
+[node name="player" type="CharacterBody2D" parent="."]
+script = ExtResource("3_rarhs")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+position = Vector2(746.5, 518.8906)
+scale = Vector2(0.25961572, 0.2617188)
+texture = ExtResource("5_c01mt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(746.6992, 519.1953)
+shape = SubResource("RectangleShape2D_nxtc6")
+
+[node name="Sphere" type="Node2D" parent="."]
+script = ExtResource("2_vcsgt")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sphere"]
+position = Vector2(449.05005, 139.05)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_c01mt")
+
+[node name="Label" type="Label" parent="Sphere"]
+offset_left = 470.4934
+offset_top = 89.99724
+offset_right = 715.4934
+offset_bottom = 112.99724
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
