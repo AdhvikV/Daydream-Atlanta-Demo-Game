@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d2go2pmkhiu4q" path="res://scenes/tower_2.gd" id="1_0qe5w"]
 
 [node name="Node2D" type="Control"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_0qe5w")
@@ -12,6 +13,25 @@ layout_mode = 0
 offset_right = 1255.0
 offset_bottom = 853.0
 color = Color(0.11621902, 0.041421577, 0.01301016, 1)
+
+[node name="FinalTimeLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.8855
+offset_top = 243.99522
+offset_right = 779.8033
+offset_bottom = 348.99524
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.025705079
+scale = Vector2(0.9825226, 1)
+theme_override_font_sizes/font_size = 92
+text = "Whats Your Time?
+"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
